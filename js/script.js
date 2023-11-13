@@ -41,13 +41,13 @@ let prezzoTotale;
 
 if ( etaPasseggero <= minorenne) {
 
-    const ImportoScontoMinorenne = (imponibile * scontoMinorenne/100) ;
+    let ImportoScontoMinorenne = (imponibile * scontoMinorenne/100) ;
     prezzoTotale = (imponibile - ImportoScontoMinorenne);
 }
 
 else if ( etaPasseggero >= over) {
 
-    const ImportoScontoOver = (imponibile * scontoOver/100) ;
+    let ImportoScontoOver = (imponibile * scontoOver/100) ;
     prezzoTotale = (imponibile - ImportoScontoOver);
 }
 
